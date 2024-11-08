@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>Choose your choice</h3>
+    <div id="buttons">
+      <div class="button">
+        <button id="rock" onclick="evaluateResult('rock');">
+          <!-- <img src="rock.jpeg" alt="Rock" /> -->
+        </button>
+      </div>
+      <div class="button">
+        <button id="paper" onclick="evaluateResult('paper');">
+          <!-- <img src="paper.jpeg" alt="paper" /> -->
+        </button>
+      </div>
+      <div class="button">
+        <button id="Scissors" onclick="evaluateResult('scissors');">
+          <!-- <img src="Scissors.jpeg" alt="Scissors" /> -->
+        </button>
+      </div>
+    </div>
+    <br />
+    <div id="resultbuttons">
+      <div id="selectedtext"></div>
+      <div id="Selected"></div>
+      <div id="Generated"></div>
+      <div id="Generatedtext"></div>
+    </div>
+    <br /><br />
+    <div id="winner"></div>
+    <div id="result">
+      Wins : 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; losses : 0
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;ties : 0
+    </div>
+    <br /><button id="playagain" onclick="resetRand();">Play Again</button>
+  </body>
+  <script src="script.js"></script>
+</html>
